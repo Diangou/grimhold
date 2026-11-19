@@ -1,0 +1,9 @@
+# Sauvegardes du joueur
+save.json
+save.json.tmp
+
+# Binaires
+/grimhold
+/grimhold.exe
+*.exe
+*.exe~

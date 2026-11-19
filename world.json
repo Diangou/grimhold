@@ -1,0 +1,67 @@
+{
+  "start": "crossroads",
+  "regions": [
+    {
+      "id": "crossroads",
+      "name": "The Crossroads",
+      "description": "A gibbet creaks over four muddy roads. The last lantern in the land still burns here, for now.",
+      "danger": 0,
+      "foes": [],
+      "exits": ["ashen-marsh", "hollow-wood"]
+    },
+    {
+      "id": "ashen-marsh",
+      "name": "Ashen Marsh",
+      "description": "Fog, iron, and things that breathe under the water.",
+      "danger": 1,
+      "foes": ["goblin", "skeleton", "giant-rat", "zombie"],
+      "exits": ["crossroads", "drowned-chapel"]
+    },
+    {
+      "id": "hollow-wood",
+      "name": "Hollow Wood",
+      "description": "Trees with no leaves and too many eyes. Something has been dragging bodies between the trunks.",
+      "danger": 1,
+      "foes": ["wolf", "bandit", "giant-spider", "goblin"],
+      "exits": ["crossroads", "bone-crypts"]
+    },
+    {
+      "id": "drowned-chapel",
+      "name": "Drowned Chapel",
+      "description": "Black water fills the nave to the knees. The bell still rings at midnight, though no one is left to pull the rope.",
+      "danger": 2,
+      "foes": ["ghoul", "cultist", "zombie", "specter"],
+      "exits": ["ashen-marsh", "bone-crypts"]
+    },
+    {
+      "id": "bone-crypts",
+      "name": "Bone Crypts",
+      "description": "Niches carved into the rock, each one occupied. Some of the occupants are not resting.",
+      "danger": 3,
+      "foes": ["ghast", "shadow", "ghoul", "specter"],
+      "exits": ["hollow-wood", "drowned-chapel", "black-spire"]
+    },
+    {
+      "id": "black-spire",
+      "name": "The Black Spire",
+      "description": "A tower of fused obsidian that swallows the light. Whatever cursed these lands is waiting at the top.",
+      "danger": 4,
+      "foes": ["wight", "gargoyle", "ghast", "shadow"],
+      "exits": ["bone-crypts", "hollow-throne"]
+    },
+    {
+      "id": "hollow-throne",
+      "name": "The Hollow Throne",
+      "description": "At the top of the spire, a crown of rust rests on a skull that still remembers being a king. The curse began here.",
+      "danger": 5,
+      "foes": [],
+      "exits": ["black-spire"],
+      "min_level": 7,
+      "boss": {
+        "slug": "wight",
+        "title": "The Hollow King",
+        "hit_points": 40
+      }
+    }
+  ]
+}
